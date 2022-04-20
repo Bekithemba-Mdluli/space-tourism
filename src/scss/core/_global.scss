@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -84,7 +86,13 @@ h3 {
 
 // Visibility
 .hide-for-mobile {
-  @include breakpoint-down(medium) {
+  @include breakpoint-up(small) {
+    display: none !important;
+  }
+}
+
+.hide-for-tablet {
+  @include breakpoint-up(medium) {
     display: none !important;
   }
 }

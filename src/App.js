@@ -1,14 +1,10 @@
 import './App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
-      {/* $breakpoints: (
-  small: 35em, // 560
-  medium: 50em, // 800
-  large: 65em // 1040
-) */}
+    <div className="sus">
+      <Home />
     </div>
   );
 }
