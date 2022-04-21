@@ -3,7 +3,7 @@ import Header from '../components/Header'
 
 function Home() {
     return (
-        <div>
+        <div className='home'>
             <Header />
         </div>
     )

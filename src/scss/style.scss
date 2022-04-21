@@ -1,5 +1,9 @@
-@import "abstracts/variables";
-@import "abstracts/colors";
-@import "abstracts/mixins";
+// @import "abstracts/variables";
+// @import "abstracts/colors";
+// @import "abstracts/mixins";
+@import "abstracts/abstracts";
 @import "core/global";
 @import "core/typography";
+
+@import "layout/layout";
+@import "pages/home"
