@@ -25,9 +25,9 @@ function Header() {
                 <nav className='header__nav hide-for-mobile'>
                     <ul className='header__nav-ul'>
                         <li className='active'><a href='/'><span className='hft'>00</span>Home</a></li>
-                        <li><a href='/'><span className='hft'>01</span>Crew</a></li>
-                        <li><a href='/'><span className='hft'>02</span>Technology</a></li>
-                        <li><a href='/'><span className='hft'>03</span>Destination</a></li>
+                        <li><a href='/'><span className='hft'>01</span>Destination</a></li>
+                        <li><a href='/'><span className='hft'>02</span>Crew</a></li>
+                        <li><a href='/'><span className='hft'>03</span>Technology</a></li>
                     </ul>
                 </nav>
 
