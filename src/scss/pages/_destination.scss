@@ -1,0 +1,53 @@
+.destination {
+    // height: 100vh;
+    height: 100%;
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint-up(medium) {
+        background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
+
+    @include breakpoint-up(large) {
+        background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    }
+
+    h4 {
+        text-align: center;
+        font-family: $barlow;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        span {
+            color: hsl(222, 6%, 32%);
+            letter-spacing: unset;
+        }
+
+        @include breakpoint-up(medium) {
+            text-align: unset;
+            font-size: 20px;
+            margin-left: 39px;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 28px;
+            margin-left: 150px;
+        }
+    }
+
+    &__content {
+        @include breakpoint-up(large) {
+            &-items {
+                display: flex;
+                align-items: center;
+                margin-left: 160px;
+                gap: 130px;
+                // justify-content: space-around;
+            }
+        }
+    }
+
+    // background-color: red;
+}

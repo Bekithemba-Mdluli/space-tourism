@@ -98,6 +98,10 @@
         backdrop-filter: blur(10px);
         padding-inline: 50px;
 
+        @include breakpoint-up(large) {
+            padding-inline: 180px;
+        }
+
         ul {
             height: 96px;
             display: flex;
@@ -135,18 +139,6 @@
         }
     }
 }
-
-// .header::before {
-//     content: '';
-//     display: block;
-//     position: relative;
-//     height: 6px;
-//     width: 100%;
-//     margin-right: -2.5rem;
-//     background: hsla(0, 0%, 100%, 25%);
-//     order: 1;
-// }
-
 
 .l {
     display: flex;

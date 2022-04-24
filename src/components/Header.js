@@ -20,8 +20,6 @@ function Header() {
                     <img src={menu} alt="menu" />
                 </div>
 
-                {/* <div className='l'> */}
-                {/* <hr className='line hft' /> */}
                 <nav className='header__nav hide-for-mobile'>
                     <ul className='header__nav-ul'>
                         <li className='active'><a href='/'><span className='hft'>00</span>Home</a></li>
@@ -31,8 +29,6 @@ function Header() {
                     </ul>
                 </nav>
 
-
-                {/* </div> */}
             </header>
             <nav className={isOpen ? 'header__navM' : 'header__navM hide'} data-visible="true">
                 <div className='header__navM-img'>
@@ -48,8 +44,4 @@ function Header() {
         </>
     )
 }
-// 00 Home
-// 01 Destination
-// 02 Crew
-// 03 Technology
 export default Header
