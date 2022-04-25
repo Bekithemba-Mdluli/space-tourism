@@ -1,7 +1,12 @@
 .destination {
     // height: 100vh;
-    height: 100%;
+    // min-height: 100%;
+    // min-width: 100vw;
+    // min-height: 100%;
+    // min-width: 100vw;
+    // width: 100vw;
     background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -45,6 +50,14 @@
                 margin-left: 160px;
                 gap: 130px;
                 // justify-content: space-around;
+
+                &1 {
+                    width: 50%;
+                }
+
+                &2 {
+                    width: 50%;
+                }
             }
         }
     }
