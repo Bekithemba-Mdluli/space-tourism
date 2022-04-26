@@ -1,0 +1,72 @@
+.tech {
+
+    &__heading {
+        text-transform: uppercase;
+        font-family: $barlow;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 3px;
+
+        span {
+            font-weight: 700;
+            color: #55575D;
+            margin-right: 16px;
+        }
+
+        @include breakpoint-up(medium) {
+            text-align: unset;
+            margin-left: 39px;
+            font-size: 20px;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 28px;
+            margin-bottom: 0;
+            // margin-inline: 5%;
+            margin-left: 0;
+            margin-top: 76px;
+            margin-bottom: 154px;
+
+        }
+    }
+
+    &__imgCon {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        // background-color: red;
+
+        &-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 34px;
+
+            &-btn {
+                // padding: 15px;
+                border: none;
+                padding-inline: 22px;
+                padding-block: 16px;
+                // padding: 20px;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid #4D4D55;
+                color: white;
+                font-family: $bellefair;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.tActive {
+    background-color: $white;
+    border: none;
+    color: #4D4D56;
+}

@@ -1,5 +1,6 @@
 import './App.css';
-import Crew from './pages/Crew';
+// import Crew from './pages/Crew';
+import Technology from './pages/Technology';
 // import Destination from './pages/Destination';
 // import Home from './pages/Home';
 
@@ -8,7 +9,8 @@ function App() {
     <div>
       {/* <Home /> */}
       {/* <Destination /> */}
-      <Crew />
+      {/* <Crew /> */}
+      <Technology />
     </div>
   );
 }
