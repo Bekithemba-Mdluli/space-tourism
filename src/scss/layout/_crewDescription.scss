@@ -12,18 +12,59 @@
             color: #55575D;
             margin-right: 16px;
         }
+
+        @include breakpoint-up(medium) {
+            text-align: unset;
+            margin-left: 39px;
+            font-size: 20px;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 28px;
+            margin-bottom: 0;
+            // margin-inline: 5%;
+            margin-left: 0;
+            margin-top: 76px;
+            margin-bottom: 154px;
+
+        }
     }
 
     &__img {
         margin-top: 32px;
         display: flex;
+        flex-direction: column;
         // align-items: center;
         justify-content: center;
 
+        display: flex;
+        // justify-content: center;
+
+        @include breakpoint-up(large) {
+            width: 540px;
+            height: 700px;
+            // background-color: green;
+            margin-top: unset;
+        }
+
         img {
             width: 177px;
+            // background-color: green;
             // height: 222px;
+            // justify-content: center;
+            margin-inline: auto;
+
+            @include breakpoint-up(medium) {
+                width: 456px;
+            }
+
+            @include breakpoint-up(large) {
+                // width: 100%;
+                // height: 100%;
+                object-fit: contain;
+            }
         }
+
     }
 
     &__radio {
@@ -39,16 +80,73 @@
             border: none;
             background-color: #454850;
         }
+
+        @include breakpoint-up(large) {
+            justify-content: unset;
+            margin-top: 129px;
+        }
     }
 
     &__content {
+        margin-top: 32px;
+        text-align: center;
+        // margin-inline: 24px;
 
         // background-color: red;
         h1 {
-            font-size: 16px;
             text-transform: uppercase;
+            font-size: 24px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            font-size: $bellefair;
+            font-weight: 400;
 
-            span {}
+            span {
+                color: #919398;
+                font-size: 16px;
+            }
+        }
+
+        p {
+            color: #D0D6F9;
+            line-height: 30px;
+            font-size: 15px;
+            font-family: $barlow;
+            font-weight: 400;
+            padding-inline: 10%;
+        }
+
+        @include breakpoint-up(medium) {
+            h1 {
+                font-size: 40px;
+
+                span {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                margin-inline: 12%;
+                // text-align: unset;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            text-align: unset;
+
+            h1 {
+                font-size: 56px;
+
+            }
+
+            p {
+                // padding-inline: 0;
+                margin: unset;
+                padding: unset;
+                font-size: 18px;
+                margin-right: 36%;
+            }
         }
     }
 }
@@ -56,3 +154,48 @@
 .rActive {
     background-color: white;
 }
+
+.hr-crew {
+    margin: 0;
+    margin-inline: 24px;
+    height: 0.5px;
+    background-color: #979797;
+    border: none;
+    // margin-block: none;
+
+    @include breakpoint-up(medium) {
+        // margin-top: 48px;
+        margin-inline: 173px;
+    }
+
+    @include breakpoint-up(large) {
+        justify-content: unset;
+        margin-inline: unset;
+        // margin-right: 300px;
+        margin-right: 35%;
+    }
+}
+
+.crew-container {
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        // flex-direction: column-reverse;
+        // justify-content: center;
+        flex-direction: row-reverse;
+        margin-inline: 5%;
+        // align-items: center;
+        overflow-y: hidden;
+    }
+
+}
+
+// .img {}
