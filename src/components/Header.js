@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from '../assets/shared/logo.svg';
 import menu from '../assets/shared/icon-hamburger.svg';
@@ -7,16 +7,10 @@ import close from '../assets/shared/icon-close.svg';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
-    const [isActive, setIsActive] = useState(0)
 
     const toggleNav = () => {
         setIsOpen(!isOpen)
     }
-
-    // const isActive = () => {
-
-    // }
-
 
     return (
         <>
@@ -31,7 +25,6 @@ function Header() {
 
                 <nav className='header__nav hide-for-mobile'>
                     <ul className='header__nav-ul'>
-                        {/* <li className={isActive? 'active': ''}><NavLink to='/'><span className='hft'>00</span>Home</NavLink></li> */}
                         <li className={window.location.pathname === '/'? 'active' : ''}><Link  to='/'><span className='hft'>00</span>Home</Link></li>
                         <li className={window.location.pathname === '/destination'? 'active' : ''}><Link   to='/destination'><span className='hft'>01</span>Destination</Link></li>
                         <li className={window.location.pathname === '/crew'? 'active' : ''}><Link  to='/crew'><span className='hft'>03</span>Crew</Link></li>
@@ -51,7 +44,6 @@ function Header() {
                         <li className={window.location.pathname === '/technology'? 'active' : ''}><Link  to='/technology'><span className='hft'>02</span>Technology</Link></li>
                 </ul>
             </nav>
-            {/* <h1>Some {id}</h1> */}
         </>
     )
 }

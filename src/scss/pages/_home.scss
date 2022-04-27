@@ -1,15 +1,15 @@
 .home {
-    // height: 100vh;
-    height: 100%;
-    background-image: url('../../assets/home/background-home-mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    @include breakpoint-up(medium) {
-        background-image: url('../../assets/home/background-home-tablet.jpg');
-    }
+  @include breakpoint-up(medium) {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
 
-    @include breakpoint-up(large) {
-        background-image: url('../../assets/home/background-home-desktop.jpg');
-    }
+  @include breakpoint-up(large) {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+  }
 }
