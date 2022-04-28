@@ -8,6 +8,7 @@ const Planet = ({ image }) => {
         <div className='planet'>
             <img src={image} alt='Planet' />
             {/* <img src={moon} alt='Planet' /> */}
+            {console.log(image)}
 
         </div>
     )

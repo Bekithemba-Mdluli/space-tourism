@@ -23,18 +23,18 @@ function Destination() {
                 <div className='destination__content'>
                     <h4><span>01</span> Pick your destination</h4>
 
-                    <div className='destination__content-items'>
-                        <div className='destination__content-items1'>
-                            <Planet image={data.destinations[0].images} />
-                            {/* <img src={require(data.destinations[0].images.png)} alt="Earth" /> */}
-                            {/* {console.log(data.destinations[0].images)} */}
-                        </div>
+                    {/* <div className='destination__content-items'> */}
+                    {/* <div className='destination__content-items1'> */}
+                    {/* <Planet image={data.destinations[0].images} /> */}
+                    {/* <img src={require(data.destinations[0].images.png)} alt="Earth" /> */}
+                    {/* {console.log(data.destinations[0].images)} */}
+                    {/* </div> */}
 
-                        <div className='destination__content-items2'>
-                            <DestinationH />
-                            <DestinatinD name={data.destinations[0].name} desc={data.destinations[0].description} distance={data.destinations[0].distance} travel={data.destinations[0].travel} />
-                        </div>
-                    </div>
+                    {/* <div className='destination__content-items2'> */}
+                    {/* <DestinationH /> */}
+                    <DestinatinD name={data.destinations[0].name} desc={data.destinations[0].description} distance={data.destinations[0].distance} travel={data.destinations[0].travel} />
+                    {/* </div> */}
+                    {/* </div> */}
                 </div>
             </main>
         </div>

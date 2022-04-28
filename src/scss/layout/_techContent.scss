@@ -1,5 +1,4 @@
 .tech {
-
     &__heading {
         text-transform: uppercase;
         font-family: $barlow;
@@ -23,10 +22,10 @@
         @include breakpoint-up(large) {
             font-size: 28px;
             margin-bottom: 0;
-            // margin-inline: 5%;
             margin-left: 0;
             margin-top: 76px;
-            margin-bottom: 154px;
+            margin-bottom: 24px;
+            margin-left: 10%;
 
         }
     }
@@ -34,13 +33,20 @@
     &__imgCon {
         width: 100%;
 
+        @include breakpoint-up(large) {
+            object-fit: contain;
+        }
+
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
     &__container {
-        // background-color: red;
+        @include breakpoint-up(large) {
+            display: flex;
+        }
 
         &-btns {
             display: flex;
@@ -48,18 +54,95 @@
             justify-content: center;
             margin-top: 34px;
 
+            @include breakpoint-up(large) {
+                flex-direction: column;
+                margin-right: 80px;
+            }
+
             &-btn {
-                // padding: 15px;
                 border: none;
                 padding-inline: 22px;
                 padding-block: 16px;
-                // padding: 20px;
                 border-radius: 50%;
                 background-color: transparent;
                 border: 1px solid #4D4D55;
                 color: white;
                 font-family: $bellefair;
                 font-size: 16px;
+
+                @include breakpoint-up(large) {
+                    padding-inline: 34px;
+                    padding-block: 30px;
+                }
+            }
+        }
+
+        &-content {
+            margin-top: 26px;
+
+            @include breakpoint-up(large) {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 3px;
+                line-height: 30px;
+                font-family: $bellefair;
+                font-weight: 400;
+                color: $white;
+                text-transform: uppercase;
+
+                span {
+                    font-size: 14px;
+                    font-family: $barlow;
+                    color: #D0D6F9;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-inline: 24px;
+                line-height: 28px;
+                font-size: 15px;
+                color: #D0D6F9;
+            }
+
+            @include breakpoint-up(medium) {
+                h1 {
+                    font-size: 40px;
+                    line-height: unset;
+
+                    span {
+                        margin-bottom: 20px;
+                        font-family: 16px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-inline: 26%;
+                }
+            }
+
+            @include breakpoint-up(large) {
+
+                h1 {
+                    text-align: unset;
+                    font-size: 56px;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                p {
+                    text-align: unset;
+                    margin-inline: unset;
+                    margin-right: 25%;
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -69,4 +152,13 @@
     background-color: $white;
     border: none;
     color: #4D4D56;
+}
+
+.tech-c {
+    @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: 10%;
+    }
 }
