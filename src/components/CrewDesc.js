@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import doug from '../assets/crew/image-douglas-hurley.png';
 
 import data from '../data/output';
 
@@ -8,12 +7,6 @@ function CrewDesc() {
     const [selected, setSelected] = useState(0)
     return (
         <div>
-            {/* <div className='crew-desc__radio hide-for-tablet'>
-                <button onClick={() => setSelected(0)} className={selected === 0 ? 'crew-desc__radio-btn rActive' : 'crew-desc__radio-btn'}></button>
-                <button onClick={() => setSelected(1)} className={selected === 1 ? 'crew-desc__radio-btn rActive' : 'crew-desc__radio-btn'}></button>
-                <button onClick={() => setSelected(2)} className={selected === 2 ? 'crew-desc__radio-btn rActive' : 'crew-desc__radio-btn'}></button>
-                <button onClick={() => setSelected(3)} className={selected === 3 ? 'crew-desc__radio-btn rActive' : 'crew-desc__radio-btn'}></button>
-            </div> */}
 
             <div className='crew-desc'>
                 <h4 className='hide-for-desktop'><span>02</span>Meet your crew</h4>
