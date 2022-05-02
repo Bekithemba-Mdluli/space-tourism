@@ -22,13 +22,8 @@ function Header() {
                 <div className='header__menu hide-for-tablet' onClick={toggleNav}>
                     <img src={menu} alt="menu" />
                 </div>
-                {/* <hr /> */}
-                {/* <div className='hrr hft'></div> */}
-                <nav className='header__nav hide-for-mobile'>
 
-                    {/* <div>
-                        <hr />
-                    </div> */}
+                <nav className='header__nav hide-for-mobile'>
 
 
                     <ul className='header__nav-ul'>

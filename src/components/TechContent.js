@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import shutle from '../assets/technology/image-launch-vehicle-landscape.jpg';
+// import shutle from '../assets/technology/image-launch-vehicle-landscape.jpg';
 import data from '../data/output';
 
 function TechContent() {
