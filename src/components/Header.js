@@ -16,7 +16,7 @@ function Header() {
         <>
             <header className='header'>
                 <div className='header__logo'>
-                    <img src={logo} alt="Logo" />
+                    <Link to='/'><img src={logo} alt="Logo" /></Link>
                 </div>
 
                 <div className='header__menu hide-for-tablet' onClick={toggleNav}>
